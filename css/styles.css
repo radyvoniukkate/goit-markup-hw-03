@@ -104,13 +104,13 @@ align-items: center;
 
 .main-section {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-section .container {
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
-  padding: 188px 0;
 }
 
 .main-title {
@@ -149,13 +149,25 @@ align-items: center;
   background-color: #404bbf;
 }
 
-.benefits,
 .team-list {
   list-style: none;
   gap: 24px;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+
+.benefits{
+  list-style: none;
+  gap: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio-list {
@@ -166,7 +178,8 @@ align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
-
+padding: 0;
+margin: 0;
 }
 
 .list-title {
@@ -181,8 +194,17 @@ align-items: center;
   padding: 120px 0;
 }
 
-.benefits-section .section-title{
-  visibility: hidden;
+.benefits-section .container .visually-hidden{
+  position: absolute;
+width: 1px;
+height: 1px;
+margin:-1px;
+border: 0;
+ padding: 0;
+white-space: nowrap;
+ clip-path: inset(100%);
+clip: rect(0 0 0 0);
+ overflow: hidden;
 }
 
 .benefits-section .container {
@@ -204,7 +226,7 @@ align-items: center;
   margin: 0 auto;
 }
 
-.benefit {
+.benefits .benefit {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -298,6 +320,7 @@ flex-shrink: 0;
   gap: 8px;
   align-self: stretch;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-item .card-content .list-title{
