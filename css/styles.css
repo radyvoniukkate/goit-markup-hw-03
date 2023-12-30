@@ -4,12 +4,25 @@ body {
   background-color: #ffffff;
 }
 
+header .container {
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 25.5px 156px;
+}
+
 .navbar-links {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .navbar-links .link {
@@ -38,6 +51,10 @@ body {
   letter-spacing: 0.32px;
   list-style: none;
   color: #434455;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .address-links .link {
@@ -77,6 +94,13 @@ header .logo-link {
   background: #2e2f42;
 }
 
+.main-section .container {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  padding: 188px 472px;
+}
+
 .main-title {
   font-size: 56px;
   font-weight: 700;
@@ -95,6 +119,12 @@ header .logo-link {
   color: #fff;
   border: none;
   cursor: pointer;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-button:focus {
@@ -106,9 +136,21 @@ header .logo-link {
 }
 
 .benefits,
-.team-list,
+.team-list {
+  list-style: none;
+  gap: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
 .portfolio-list {
   list-style: none;
+  gap: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .list-title {
@@ -118,8 +160,35 @@ header .logo-link {
   letter-spacing: 0.4px;
 }
 
-.benefits-section{
+.benefits-section {
   color: #2e2f42;
+}
+
+.benefits-section .container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 120px 156px;
+}
+
+.team-section .container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 120px 156px;
+}
+
+.portfolio-section .container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 120px 156px;
+}
+
+.benefit {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 8px;
 }
 
 .text {
@@ -142,23 +211,62 @@ header .logo-link {
   text-transform: capitalize;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .team-member {
   background: #fff;
+  display: inline-flex;
+padding-bottom: 32px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-section{
-  color:#2e2f42;
+.team-member .card-content{
+  display: flex;
+width: 232px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+
+.portfolio-section {
+  color: #2e2f42;
 }
 
 .portfolio-item {
   border: 1px solid #e7e9fc;
   background: #fff;
+  display: flex;
+width: 360px;
+padding-bottom: 32px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex-shrink: 0;
+}
+
+.portfolio-item .card-content{
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
 .footer {
   background: #2e2f42;
+}
+
+.footer .container {
+  padding: 101.5px 1020px 100px 156px;
 }
 
 .footer .text {
@@ -166,6 +274,7 @@ header .logo-link {
   font-size: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 .footer .logo-link {
@@ -177,6 +286,7 @@ header .logo-link {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  margin-bottom: 17.5px;
 }
 
 .footer .logo-link .accent {
