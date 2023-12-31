@@ -9,19 +9,23 @@ h2, h3,p{
   padding: 0;
 }
 
+img{
+  display: block;
+}
+
 .header{
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
-  width: 1158px;
+.header .container {
   display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
   margin: 0 auto;
-  /*justify-content: center;
-  align-items: center;
-  flex-shrink: 0;*/
   padding: 0 15px;
-  align-items: center;
 }
 
 .navbar-links {
@@ -117,11 +121,6 @@ align-items: center;
 .main-section {
   background: #2e2f42;
   padding: 188px 0;
-}
-
-.main-container {
-  width: 1440px;
-  flex-shrink: 0;
 }
 
 .main-title {
@@ -230,17 +229,6 @@ clip: rect(0 0 0 0);
   padding: 120px 0;
 }
 
-.team-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.portfolio-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .benefits .benefit {
   /*display: flex;
@@ -301,9 +289,6 @@ gap: 8px;*/
 padding: 32px 0;
 }
 
-.team-member img{
-  display: block;
-}
 
 .team-member .card-content .list-title{
   text-align: center;
@@ -350,12 +335,6 @@ flex-shrink: 0;*/
 .footer {
   background: #2e2f42;
   padding: 100px 0;
-}
-
-.footer-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .footer .text {
