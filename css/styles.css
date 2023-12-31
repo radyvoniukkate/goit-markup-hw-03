@@ -207,7 +207,7 @@ margin: 0;
   padding: 120px 0;
 }
 
-.benefit-container .visually-hidden{
+.visually-hidden{
   position: absolute;
 width: 1px;
 height: 1px;
